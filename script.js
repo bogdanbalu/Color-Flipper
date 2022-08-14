@@ -10,11 +10,15 @@ btn.addEventListener ("click", (event) => {
     console.log(color);
 
     document.body.style.backgroundColor = colors[randomColor];
-    btn.style.backgroundColor = colors[randomColor];
+    btn.style.backgroundColor = "Black";
     btn.style.color = "AliceBlue";
-    btn.style.border = "2px solid AliceBlue";
+    btn.style.border = "none";
     title.innerText = `Backgound color: ${colors[randomColor]}`
     title.style.color = "AliceBlue";
+    title.style.border = "2px solid Black";
+    title.style.color = "AliceBlue";
+    title.style.padding = "10px";
+    title.style.backgroundColor = "Black";
 });
 
 const getRandomColor = (colors) => {
